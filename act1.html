@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile - Dark Pink Red Theme</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: palevioletred; /* light pink */
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .card {
+        width: 900px;
+        max-width: 100%;
+        background: darkviolet;
+        border-radius: 20px;
+        padding: 25px;
+        display: flex;
+        gap: 20px;
+        border: 3px solid indianred;
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+        color: #fff;
+        flex-wrap: nowrap; /* landscape layout */
+    }
+
+    /* LEFT SIDE */
+    .left {
+        width: 30%;
+        text-align: center;
+        flex-shrink: 0;
+    }
+
+    .left img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid mediumpurple;
+    }
+
+    .name-box {
+        margin-top: 15px;
+        background: mediumpurple;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .left p {
+        margin: 5px 0;
+    }
+
+    .email-btn {
+        display: inline-block;
+        background: #ff4d6d;
+        color: #fff;
+        padding: 8px 15px;
+        border-radius: 8px;
+        text-decoration: none;
+        margin-top: 10px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .email-btn:hover {
+        background: #ff1a3c;
+    }
+
+    /* RIGHT SIDE */
+    .right {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section {
+        background: mediumpurple;
+        padding: 15px;
+        border-radius: 12px;
+        border: 2px solid mediumpurple;
+    }
+
+    .section h3 {
+        margin-top: 0;
+        color: #fff;
+    }
+
+    /* Row for Hobbies + Places */
+    .row {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    /* Hobbies box */
+    .hobbies {
+        flex: 1;
+        min-width: 250px;
+    }
+
+    /* Places box */
+    .places-section {
+        flex: 2;
+        min-width: 400px;
+    }
+
+    /* Places cards */
+    .places {
+        display: flex;
+        gap: 12px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .place-card {
+        flex: 1;
+        max-width: 32%;
+        background: purple;
+        border-radius: 10px;
+        padding: 8px;
+        text-align: center;
+        border: 2px solid mediumpurple;
+        font-weight: bold;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .place-card img {
+        width: 100%;
+        height: 180px; /* equal height for all images */
+        object-fit: cover; /* fill the card nicely */
+        border-radius: 8px;
+    }
+
+    .place-card p {
+        margin: 8px 0 0 0;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .card {
+            flex-direction: column;
+        }
+
+        .left {
+            margin-bottom: 20px;
+        }
+
+        .row {
+            flex-direction: column;
+        }
+
+        .place-card {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .place-card img {
+            height: 150px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+        <a href="#"><img src="https://i.ibb.co/5X1Lvpvm/IMG-20251125-062605-943.jpg" alt="Profile"></a>
+        <div class="name-box">MICHELLE N. TAMAYO</div>
+        <p>BSIT 2209 | Student</p>
+        <br>
+        <p><strong>Birthday:</strong> July 9, 2006</p>
+        <p><strong>Email: </strong>michelletamayo496@gmail.com</p>
+        <p><strong>Phone:</strong> 09517564406</p>
+        <p><strong>Address:</strong> Tala, Caloocan City</p>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+
+        <!-- About Me Section -->
+        <div class="section">
+            <h3>About Me</h3>
+            <p>Hello! I am <strong>Michelle</strong>, a student who loves exploring and learning new things. I enjoy listening to music, watching movies, and spending time with the people I care about.</p>
+        </div>
+
+        <!-- Row: Hobbies + Places -->
+        <div class="row">
+
+            <!-- Hobbies Section -->
+            <div class="section hobbies">
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Reading novels and manga</li>
+                    <li>Traveling to new places</li>
+                    <li>Playing online games</li>
+                    <li>Photography and editing pictures</li>
+                </ul>
+            </div>
+
+            <!-- Places I Want to Travel Section -->
+            <div class="section places-section">
+                <h3>Places I Want to Travel</h3>
+                <div class="places">
+                    <div class="place-card">
+                        <a href="https://ibb.co/sd97NkNs"><img src="https://i.ibb.co/sd97NkNs/fbe6f76fb04d02eef694a36114507a10.jpg" alt="Japan" border="0"></a>
+                        <p>Japan</p>
+                    </div>
+
+                    <div class="place-card">
+<a href="https://ibb.co/BHWgFTgt"><img src="https://i.ibb.co/BHWgFTgt/6c001b19bdadc4beb8796c0277b2b076.jpg" alt="Japan" border="0"></a>
+                        <p>South Korea</p>
+                    </div>
+
+                    <div class="place-card">
+                        <a href="https://ibb.co/PGhPTHy7"><img src="https://i.ibb.co/PGhPTHy7/6a99ee843798375c5f7049316e8d31ed.jpg" alt="Paris" border="0"></a>
+                        <p>Paris</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
